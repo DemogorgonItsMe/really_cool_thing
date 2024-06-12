@@ -1,0 +1,10 @@
+		local tool = "C4" 
+for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do
+if v:IsA("Tool") and v.Name == tool then
+v.Parent = game:GetService("Players").LocalPlayer.Character
+if v.Name == tool then
+v:Activate()
+end
+end
+end
+ end
