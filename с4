@@ -1,4 +1,9 @@
-		local tool = "C4" 
+local key = game:GetService("UserInputService")
+ 
+key.InputBegan:Connect(function(input)
+	if input.KeyCode == Enum.KeyCode.Z then
+		local tool = "C4"
+ 
 for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do
 if v:IsA("Tool") and v.Name == tool then
 v.Parent = game:GetService("Players").LocalPlayer.Character
