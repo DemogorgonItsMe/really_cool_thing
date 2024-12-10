@@ -1,0 +1,7 @@
+   while task.wait() do
+  for _, Model in pairs(workspace.PlayersCharacters:GetChildren()) do
+     if Model.ClassName == "Model" and Model:FindFirstChild("Runscript") then
+        Model.Runscript.run:FireServer(true)
+     end
+  end
+end
