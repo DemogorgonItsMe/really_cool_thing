@@ -1,0 +1,15 @@
+local running = true 
+local function stopAction()
+    running = false
+end
+while task.wait() do
+    if not running then
+        break 
+    end
+    
+    for _, Model in pairs(workspace.PlayersCharacters:GetChildren()) do
+        if Model:IsA("Model") and Model:FindFirstChild("Runscript") then
+            Model.Runscript.stop:FireServer(true)
+        end
+    end
+end
