@@ -1,7 +1,10 @@
-   while task.wait() do
-  for _, Model in pairs(workspace.PlayersCharacters:GetChildren()) do
-     if Model.ClassName == "Model" and Model:FindFirstChild("Runscript") then
-        Model.Runscript.run:FireServer(true)
-     end
-  end
+local running = true
+
+while running do
+    task.wait(0.1)
+    for _, model in pairs(workspace.PlayersCharacters:GetChildren()) do
+        if model.ClassName == "Model" and model:FindFirstChild("Runscript") then
+            model.Runscript.run:FireServer(true) -- Запуск действия
+        end
+    end
 end
