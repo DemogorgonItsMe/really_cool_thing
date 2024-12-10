@@ -1,0 +1,17 @@
+for i = 1, 100 do
+        local args = {
+        [1] = 0,
+        [2] = "0:0:2:0"
+    }
+
+    game:GetService("ReplicatedStorage"):WaitForChild("Item"):FireServer(unpack(args))
+ end
+
+ wait(6)
+
+ for _, v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+    if v.Name == "Fists" or v.Name == "C4" or v.Name == "Grenade" or v.Name == "Bear trap" or v.Name == "Fire bomb" or v.Name == "Poison flask" then
+        v:Destroy()
+        wait(0.00001)
+    end
+ end
