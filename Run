@@ -4,7 +4,7 @@ while running do
     task.wait(0.1)
     for _, model in pairs(workspace.PlayersCharacters:GetChildren()) do
         if model.ClassName == "Model" and model:FindFirstChild("Runscript") then
-            model.Runscript.run:FireServer(true) -- Запуск действия
+            model.Runscript.run:FireServer(true)
         end
     end
 end
