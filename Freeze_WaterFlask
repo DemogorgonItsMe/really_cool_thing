@@ -1,0 +1,18 @@
+local grenade = game.Players.LocalPlayer.Backpack:FindFirstChild("Water flask")
+grenade.Parent = game.Players.LocalPlayer.Character
+ for A = 1, 50 do
+        grenade.start:FireServer()
+end
+
+
+wait(1)
+
+for B = 1, 50 do
+local args = {
+        [1] = game.Players.LocalPlayer.Character.Torso.Position - Vector3.new(math.random(1,50), math.random(1,50), math.random(1,50)),
+        [2] = 1686851243.277296,
+        [3] = game.Players.LocalPlayer.Character.Head.Position - Vector3.new(math.random(1,50), math.random(1,50), math.random(1,50))
+        }
+
+grenade.throw:FireServer(unpack(args))
+end
