@@ -1,15 +1,11 @@
-local running = true 
-local function stopAction()
-    running = false
-end
-while task.wait() do
-    if not running then
-        break 
-    end
-    
-    for _, Model in pairs(workspace.PlayersCharacters:GetChildren()) do
-        if Model:IsA("Model") and Model:FindFirstChild("Runscript") then
-            Model.Runscript.stop:FireServer(true)
+local Players = game:GetService("Players")
+
+local function stopRunning()
+    for _, player in pairs(Players:GetPlayers()) do
+        local character = player.Character
+        if character and character:FindFirstChild("Runscript") then
+            character.Runscript.run:FireServer(false)
         end
     end
 end
+stopRunning()
