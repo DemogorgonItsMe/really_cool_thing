@@ -1,0 +1,137 @@
+local Console =  loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/STX"))()
+local ConsoleLog = Console:Window({
+    Title = "[MM Panel] Update Logs",
+    Position = UDim2.new(0.5, 0, 0.5, 0),
+    DragSpeed = 12
+})
+ConsoleLog:Prompt({
+    Title = "Checking the game...",
+    TypesWeHave = {
+        "default",
+        "success",
+        "fail",
+        "warning",
+        "nofitication"
+    },
+    Type = "default"
+})
+wait(5)
+ConsoleLog:Prompt({
+    Title = "Current game: Mortem Metallum [Alpha] (id4169490976)",
+    TypesWeHave = {
+        "default",
+        "success",
+        "fail",
+        "warning",
+        "nofitication"
+    },
+    Type = "success"
+})
+wait(0.4)
+ConsoleLog:Prompt({
+    Title = "Checking the latest updates...",
+    TypesWeHave = {
+        "default",
+        "success",
+        "fail",
+        "warning",
+        "nofitication"
+    },
+    Type = "default"
+})
+wait(4)
+ConsoleLog:Prompt({
+    Title = "the current version of the MM panel: 1.1",
+    TypesWeHave = {
+        "default",
+        "success",
+        "fail",
+        "warning",
+        "nofitication"
+    },
+    Type = "warning"
+})
+wait(1)
+ConsoleLog:Prompt({
+    Title = "Update logs:",
+    TypesWeHave = {
+        "default",
+        "success",
+        "fail",
+        "warning",
+        "nofitication"
+    },
+    Type = "default"
+})
+wait(0.5)
+ConsoleLog:Prompt({
+    Title = "[+] added 'Crash' command",
+    TypesWeHave = {
+        "default",
+        "success",
+        "fail",
+        "warning",
+        "nofitication"
+    },
+    Type = "nofitication"
+})
+wait(0.4)
+ConsoleLog:Prompt({
+    Title = "[+] added 'Runall' command",
+    TypesWeHave = {
+        "default",
+        "success",
+        "fail",
+        "warning",
+        "nofitication"
+    },
+    Type = "nofitication"
+})
+wait(0.4)
+ConsoleLog:Prompt({
+    Title = "[+] added 'Onepunch' command",
+    TypesWeHave = {
+        "default",
+        "success",
+        "fail",
+        "warning",
+        "nofitication"
+    },
+    Type = "nofitication"
+})
+wait(0.4)
+ConsoleLog:Prompt({
+    Title = "[+] added 'Updates' command",
+    TypesWeHave = {
+        "default",
+        "success",
+        "fail",
+        "warning",
+        "nofitication"
+    },
+    Type = "nofitication"
+})
+wait(0.4)
+ConsoleLog:Prompt({
+    Title = "[+] fixed anti kick",
+    TypesWeHave = {
+        "default",
+        "success",
+        "fail",
+        "warning",
+        "nofitication"
+    },
+    Type = "nofitication"
+})
+wait(0.4)
+ConsoleLog:Prompt({
+    Title = "[-] removed old nuker (PATCHED)",
+    TypesWeHave = {
+        "default",
+        "success",
+        "fail",
+        "warning",
+        "nofitication"
+    },
+    Type = "nofitication"
+})
