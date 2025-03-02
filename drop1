@@ -1,0 +1,20 @@
+local player = game.Players.LocalPlayer
+    local backpack = player.Backpack
+    local items = {"Tapor"}
+    for _, item in pairs(backpack:GetChildren()) do
+        if item:IsA("Tool") then
+            if not items[item.Name] then
+                items[item.Name] = {}
+            end
+            table.insert(items[item.Name], item)
+        end
+    end
+    for name, itemList in pairs(items) do
+        if #itemList > 1 then
+            for _, item in ipairs(itemList) do
+                item.Parent = game.Workspace
+                item.Position = player.Character.HumanoidRootPart.Position + Vector3.new(0, 5, 0)
+            end
+        end
+    end
+end
