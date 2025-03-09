@@ -199,7 +199,7 @@ function lib:init(ti, dosplash, visiblekey, deleteprevious)
     local searchtextbox = Instance.new("TextBox")
     searchtextbox.Name = "searchtextbox"
     searchtextbox.Parent = search
-    searchtextbox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    searchtextbox.BackgroundColor3 = Color3.fromRGB(48, 48, 48)
     searchtextbox.BackgroundTransparency = 1
     searchtextbox.ClipsDescendants = true
     searchtextbox.Position = UDim2.new(0.180257514, 0, -0.0162218884, 0)
@@ -222,7 +222,7 @@ function lib:init(ti, dosplash, visiblekey, deleteprevious)
     sidebar.Name = "sidebar"
     sidebar.Parent = main
     sidebar.Active = true
-    sidebar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    sidebar.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
     sidebar.BackgroundTransparency = 1
     sidebar.BorderSizePixel = 0
     sidebar.Position = UDim2.new(0.0249653254, 0, 0.181506842, 0)
@@ -260,7 +260,7 @@ function lib:init(ti, dosplash, visiblekey, deleteprevious)
     local buttons = Instance.new("Frame")
     buttons.Name = "buttons"
     buttons.Parent = main
-    buttons.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    buttons.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
     buttons.BackgroundTransparency = 1
     buttons.Size = UDim2.new(0, 105, 0, 57)
 
